@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UniSalento Map</title>
+
+    <!-- MapLibre -->
+    <link
+        href="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.css"
+        rel="stylesheet"
+    />
+
+    <!-- Il nostro CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="map"></div>
+
+    <!-- MapLibre -->
+    <script src="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.js"></script>
+
+    <!-- Il nostro JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+<div id="search-container">
+    <input
+        type="text"
+        id="search-input"
+        placeholder="🔍 Cerca un plesso..."
+        autocomplete="off"
+    >
+
+    <div id="search-results"></div>
+</div>
+</html>
